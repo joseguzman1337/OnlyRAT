@@ -20,23 +20,23 @@ o0    _o0"` '`   NN    NN Ll  Yy,yYY  '^%%&VGh%%%%%&&"^%_,,       "%%%,_      _,
 ```
 
 ## Update: 3.2
-- Hides OnlyRAT user from login, stat menu, and more
+- Hides OnlyRAT user from login, start menu, and more
 - Fixed update bug
 - ZSH support
 - VPS custom port support
 
 ## [!!] DISCLAIMER
 TLDR:
-Please use securily and ethically :D
+Please use securely and ethically :D
 
-Feel free to use this RAT on any computer that you own or have permissions to test malicious code on. It's perfectly legal. But do not install this RAT on targets you don't have permission to test malware on. Not only is it illegal, but by doing so you are putting that computer at risk. Since the RAT needs to be able to remotely connect, it is enabling a persistence that other hackers on the network may target or even bruteforce. 
+Feel free to use this RAT on any computer that you own or have permission to test malicious code on. It's perfectly legal. But do not install this RAT on targets you don't have permission to test malware on. Not only is it illegal, but by doing so you are putting that computer at risk. Since the RAT needs to be able to remotely connect, it is enabling a persistence that other hackers on the network may target or even brute force. 
 
-The purpose of this RAT is to teach members of the security community the basics of malware development, so do not use with malintent. Malware development is an essential skill that is often overlooked within the security world. By learning malware development, security researchers can both better understand how hackers think and develop malicious code, as well as learning to develop their own for security purposes. By making a single RAT that can hold all of the teachings in one form factor, it is much easier to connect the lessons.
+The purpose of this RAT is to teach members of the security community the basics of malware development, so do not use it with malintent. Malware development is an essential skill that is often overlooked within the security world. By learning malware development, security researchers can better understand how hackers think and develop malicious code, as well as learn to develop their own for security purposes. By making a single RAT that can hold all of the teachings in one form factor, it is much easier to connect the lessons.
 
 ## Overview:
-OnlyRAT [Only Remote Access Tool] is the *only RAT* you'll ever need. This tool is an SSH [Secure SHell] RAT that is completely network oriented, making it virtually fileless. It is capable of remotely connecting to the target computer, remote file uploads and downloads, as well as code execution **all** through network commands and communicaiton.
+OnlyRAT [Only Remote Access Tool] is the *only RAT* you'll ever need. This tool is an SSH [Secure SHell] RAT that is completely network-oriented, making it virtually fileless. It is capable of remotely connecting to the target computer, remote file uploads and downloads, as well as code execution **all** through network commands and communication.
 
-It's advanced network capabilities make it difficult for standard antivirus and firewalls to detect. The RAT has a multitude of ways of how it can be installed on to a target pc, including batch file installation and the use of [Hak5](https://hak5.org) gear. Depending on how OnlyRAT is installed, you can have formated as a *from github* or *from vps* install.
+Its advanced network capabilities make it difficult for standard antivirus and firewalls to detect. The RAT has a multitude of ways it can be installed onto a target PC, including batch file installation and the use of [Hak5](https://hak5.org) gear. Depending on how OnlyRAT is installed, you can have formatted as a *from GitHub* or *from VPS* install.
 
 *From GitHub* will install OnlyRAT from GitHub's raw data, allowing no user configuration. But the **connection can only be local** since there is no VPS to route traffic and forward ports from.
 
@@ -46,7 +46,7 @@ It's advanced network capabilities make it difficult for standard antivirus and 
 - [YouTube Video](https://www.youtube.com/watch?v=jMmLx3Cwy2I)
 - [YouTube Channel](https://youtube.com/cosmodiumcs)
 - [Website](https://cosmodiumcs.com)
-- [Article](https://www.cosmodiumcs.com/post/ssh-network-attacks-in-onlyrat)
+- [Article](https://www.cosmodiumcs.com/research/onlyrat-ssh.md)
 
 ## Requirements:
 **Attacker PC:**
@@ -56,7 +56,7 @@ It's advanced network capabilities make it difficult for standard antivirus and 
 - Linux Terminal
 - Python3
 - SSH Tools
-    - openssh-client
+    - OpenSSH-client
     - ssh-keygen
     - ssh-copy-id
 
@@ -65,23 +65,23 @@ It's advanced network capabilities make it difficult for standard antivirus and 
 
 ## Installation:
 **Target Installation:**
-- The [installers](https://github.com/CosmodiumCS/OnlyRAT/tree/main/installers) folder contains all the ways we can install the RAT on to our target
+- The [installers](https://github.com/CosmodiumCS/OnlyRAT/tree/main/installers) folder contains all the ways we can install the RAT onto our target
 
 **Attacker Installation:**
 1. Install OnlyRAT by cloning this repository
 ```bash
-git clone https://github.com/CosmodiumCS/OnlyRAT.git
+git clone https://github.com/CosmodiumCS/MK01-OnlyRAT.git
 ```
 2. Install dependencies for OnlyRAT
     - **YES**, the onlyRAT directory **is** supposed to disappear
-    - restart terminal once installation is complete
+    - restart the terminal once the installation is complete
 ```bash
-cd OnlyRAT
+cd MK01-OnlyRAT
 bash install.sh
 ```
 
 ## Configuration File:
-The configuration file `username.rat` is a file we obtain through our OnlyRAT [installers](https://github.com/CosmodiumCS/OnlyRAT/tree/main/installers). It saves information that OnlyRAT needs in order to connect back to our target computer. Having configuration files allows hackers to have a database of all the comprimised pc's they have access to.
+The configuration file `username.rat` is a file we obtain through our OnlyRAT [installers](https://github.com/CosmodiumCS/OnlyRAT/tree/main/installers). It saves information that OnlyRAT needs to connect back to our target computer. Having configuration files allows hackers to have a database of all the compromised PCs they have access to.
 
 If VPS install was used, download configuration by running:
 ```bash
@@ -99,7 +99,7 @@ onlyrat -h
 # or
 onlyrat --help
 ```
-2. Append configuraiton file to specify target
+2. Append the configuration file to specify a target
 ```bash
 onlyrat bluecosmo.rat
 ```
@@ -113,7 +113,7 @@ onlyrat --manual
 ```
 
 ## How It Works:
-OnlyRAT is a very simple yet complex peice of network oriented malware. To learn how it works and to possibly build up your malware skillset, I highly reccomend checking out [this](https://www.cosmodiumcs.com/post/ssh-network-attacks-in-onlyrat) article that I wrote about OnlyRAT.
+OnlyRAT is a very simple yet complex piece of network-oriented malware. To learn how it works and to possibly build up your malware skillset, I highly recommend checking out [this](https://www.cosmodiumcs.com/post/ssh-network-attacks-in-onlyrat) article that I wrote about OnlyRAT.
 
 ## Connection Types:
 OnlyRAT is capable of connecting to the target both locally and remotely [VPS Install required for remote connections]. OnlyRAT makes this change easy via the following...
@@ -133,9 +133,9 @@ set connection remote
 ```
 
 ## Updating OnlyRAT:
-The CosmodiumCS Team will continuously push out updates to OnlyRAT. To prevent users from continuously having to reinstall OnlyRAT themselves. We have autmated the update process.
+The CosmodiumCS Team will continuously push out updates to OnlyRAT. To prevent users from continuously having to reinstall OnlyRAT themselves. We have automated the update process.
 
-1. To check current version, run:
+1. To check the current version, run:
 ```bash
 onlyrat -v
 # or
@@ -150,7 +150,7 @@ onlyrat --update
     - this will automatically check for the latest version and run update
 
 ## Uninstall OnlyRAT:
-To uninstall OnlyRAT from your **atacker computer**, run:
+To uninstall OnlyRAT from your **attacker computer**, run:
 ```bash
 onlyrat -r
 # or
@@ -189,5 +189,5 @@ killswitch
 ```
 
 ## Credits:
-- Shoutout to Oreo for making the ascii art for the repo :)
+- Shoutout to Oreo for making the ASCII art for the repo :)
 - be sure to check his work out [here](https://github.com/OreoByte/art-pool-current)
